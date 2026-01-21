@@ -1,24 +1,53 @@
 /**
- * Starter login behavior (minimal).
- * Feature branch: feature/user-authentication should add:
- * - better validation (inline errors)
- * - UI feedback states (loading, success, failure)
- * - optional: call an API endpoint (e.g., POST /api/auth/login)
+ * Login form behavior
+ * This file handles client-side validation and user feedback.
+ * Feature branch: feature/user-authentication
  */
+
 const form = document.getElementById("loginForm");
 const message = document.getElementById("message");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+// Handle login form submission
+form.addEventListener("submit", (event) => {
+  // Prevent page reload
+  event.preventDefault();
 
+  // Get user input values
   const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;
+  const password = document.getElementById("password").value.trim();
 
-  // Minimal checks (students can improve)
-  if (!email || password.length < 6) {
-    message.textContent = "Please enter a valid email and a password (min 6 characters).";
+  // Reset message state before validating
+  message.textContent = "";
+  message.className = "muted";
+
+  // Validate email field
+  if (!email) {
+    showError("Email is required.");
     return;
   }
 
-  message.textContent = "Login submitted (stub). Implement authentication in your feature branch.";
+  // Validate password length
+  if (password.length < 6) {
+    showError("Password must be at least 6 characters long.");
+    return;
+  }
+
+  // If all validation passes
+  showSuccess("Login submitted (stub). Authentication will be added later.");
 });
+
+/**
+ * Display an error message to the user
+ */
+function showError(text) {
+  message.textContent = text;
+  message.className = "error";
+}
+
+/**
+ * Display a success message to the user
+ */
+function showSuccess(text) {
+  message.textContent = text;
+  message.className = "success";
+}
