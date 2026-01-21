@@ -4,6 +4,7 @@ const path = require("path");
 const { router: apiRouter } = require("./routes/api");
 const { router: viewRouter } = require("./routes/views");
 
+// Initialize Express application for API routing
 const app = express();
 
 // Body parsing
