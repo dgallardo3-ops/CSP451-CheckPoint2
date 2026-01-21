@@ -13,3 +13,25 @@ router.get("/health", (req, res) => {
 });
 
 module.exports = { router };
+
+/**
+ * POST /api/login
+ * Simulates a login request.
+ * This is a stub endpoint for learning purposes only.
+ */
+router.post("/login", (req, res) => {
+  const { email, password } = req.body;
+
+  // Basic validation
+  if (!email || !password) {
+    return res.status(400).json({
+      error: "Email and password are required",
+    });
+  }
+
+  // Simulated success response
+  res.json({
+    message: "Login request received",
+    user: { email },
+  });
+});
