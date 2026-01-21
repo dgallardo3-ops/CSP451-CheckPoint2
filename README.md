@@ -42,3 +42,9 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+## API Endpoints Feature
+
+This feature branch expands the backend API by adding additional REST endpoints.
+A POST endpoint was introduced to simulate login requests with basic validation,
+and a GET endpoint was added to return sample user data. These endpoints
+demonstrate proper API structure and JSON response handling.
