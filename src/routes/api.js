@@ -35,3 +35,17 @@ router.post("/login", (req, res) => {
     user: { email },
   });
 });
+
+/**
+ * GET /api/users
+ * Returns a sample list of users.
+ * This endpoint simulates data retrieval from a database.
+ */
+router.get("/users", (req, res) => {
+  res.json({
+    users: [
+      { id: 1, email: "user1@example.com" },
+      { id: 2, email: "user2@example.com" },
+    ],
+  });
+});
