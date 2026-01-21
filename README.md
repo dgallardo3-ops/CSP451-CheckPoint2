@@ -43,7 +43,7 @@ npm test
 npm run lint
 ```
 
-## User Authentication Feature
+## User Authentication Feature (Frontend)
 
 The login page was improved as part of the `feature/user-authentication` branch.
 Client-side validation was added to prevent empty or invalid submissions.
