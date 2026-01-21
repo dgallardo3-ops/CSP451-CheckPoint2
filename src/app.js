@@ -6,6 +6,7 @@ const db = require("./db");
 const { router: apiRouter } = require("./routes/api");
 const { router: viewRouter } = require("./routes/views");
 
+// Initialize Express application (database-enabled version)
 const app = express();
 
 // Initialize database connection at application startup
