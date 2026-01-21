@@ -42,3 +42,11 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+
+## User Authentication Feature
+
+The login page was improved as part of the `feature/user-authentication` branch.
+Client-side validation was added to prevent empty or invalid submissions.
+Clear visual feedback is now shown to users using styled error and success messages.
+These changes improve usability while keeping the authentication logic simple.
+
