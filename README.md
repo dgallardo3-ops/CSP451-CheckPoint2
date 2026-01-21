@@ -42,6 +42,7 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+
 ## Database Connection Feature
 
 This feature branch adds a structured database connection module to the
@@ -49,4 +50,5 @@ application. A configurable connection setup using environment variables
 was introduced, along with initialization during application startup.
 For this checkpoint, a lightweight in-memory database stub is used to
 demonstrate proper architecture without requiring a real database.
+
 
