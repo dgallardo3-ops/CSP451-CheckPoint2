@@ -51,3 +51,15 @@ function showSuccess(text) {
   message.textContent = text;
   message.className = "success";
 }
+
+// Clear messages when the user starts typing again
+document.getElementById("email").addEventListener("input", clearMessage);
+document.getElementById("password").addEventListener("input", clearMessage);
+
+/**
+ * Clears the feedback message when user modifies input
+ */
+function clearMessage() {
+  message.textContent = "";
+  message.className = "muted";
+}

@@ -8,3 +8,24 @@ button { padding: 10px 14px; border: 0; border-radius: 10px; cursor: pointer; }
 .muted { opacity: .75; }
 a { color: #0b57d0; text-decoration: none; }
 a:hover { text-decoration: underline; }
+
+/* Login message feedback styles */
+.error {
+  color: #d93025;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.success {
+  color: #188038;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.muted {
+  color: #666;
+  margin-top: 10px;
+}
+
+
+
