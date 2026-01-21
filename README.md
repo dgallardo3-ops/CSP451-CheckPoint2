@@ -49,4 +49,6 @@ The login page was improved as part of the `feature/user-authentication` branch.
 Client-side validation was added to prevent empty or invalid submissions.
 Clear visual feedback is now shown to users using styled error and success messages.
 These changes improve usability while keeping the authentication logic simple.
+> Note: This feature was reviewed and approved via pull request.
+
 
