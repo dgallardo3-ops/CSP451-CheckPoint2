@@ -50,5 +50,12 @@ Client-side validation was added to prevent empty or invalid submissions.
 Clear visual feedback is now shown to users using styled error and success messages.
 These changes improve usability while keeping the authentication logic simple.
 > Note: This feature was reviewed and approved via pull request.
+## Database Connection Feature
+
+This feature branch adds a structured database connection module to the
+application. A configurable connection setup using environment variables
+was introduced, along with initialization during application startup.
+For this checkpoint, a lightweight in-memory database stub is used to
+demonstrate proper architecture without requiring a real database.
 
 
