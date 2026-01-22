@@ -16,6 +16,11 @@ npm run dev
 Open: http://localhost:3000
 
 ## Structure
+## Database Connection Feature
+
+This feature branch introduces a database connection layer using
+environment variables and a fake in-memory database for checkpoint purposes.
+
 
 - `src/app.js` — Express server entry
 - `src/routes/` — route modules
