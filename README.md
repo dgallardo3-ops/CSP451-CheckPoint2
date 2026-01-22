@@ -48,3 +48,12 @@ This feature branch expands the backend API by adding additional REST endpoints.
 A POST endpoint was introduced to simulate login requests with basic validation,
 and a GET endpoint was added to return sample user data. These endpoints
 demonstrate proper API structure and JSON response handling.
+
+## API Endpoints Feature
+
+This feature branch expands the backend API.
+
+### Endpoints
+- `GET /api/health` — service health check
+- `POST /api/login` — accepts email and password and returns a mock response
+
