@@ -31,10 +31,11 @@ environment variables and a fake in-memory database for checkpoint purposes.
 - `docs/` — reports + screenshots checklist
 
 ## Required Branches
-Create these branches exactly:
-- `feature/user-authentication`
-- `feature/database-connection`
-- `feature/api-endpoints`
+Create these branches exactly (database branch documented separately):
+- feature/user-authentication
+- feature/database-connection (adds environment-based DB connection stub)
+- feature/api-endpoints
+
 
 ## Suggested Conflict Targets
 To intentionally create a merge conflict, edit the same lines in one of:
