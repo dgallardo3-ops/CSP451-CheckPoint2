@@ -1,11 +1,20 @@
 const express = require("express");
 const path = require("path");
 
+const db = require("./db");
+
 const { router: apiRouter } = require("./routes/api");
 const { router: viewRouter } = require("./routes/views");
 
-// Initialize Express application for API routing
+// Initialize Express application with database support and API routing
 const app = express();
+
+// Initialize database connection at application startup
+const dbConnection = db.connect();
+
+if (dbConnection.connected) {
+  console.log("Database connected:", dbConnection);
+}
 
 // Body parsing
 app.use(express.json());
