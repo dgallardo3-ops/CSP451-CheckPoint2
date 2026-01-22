@@ -17,18 +17,16 @@ const DB_NAME = process.env.DB_NAME || "checkpoint_db";
  * Simulate a database connection
  * In a real application, this would initialize the actual DB client
  */
-function connect() {
-  // This log helps confirm when the database layer is initialized
-  console.log(`Connecting to database using driver: ${DB_DRIVER}`);
 
-  // Fake connection object for checkpoint purposes
+function connect() {
+  const driver = process.env.DB_DRIVER || "in-memory";
+
+  console.log(`Database connected using driver: ${driver}`);
+
   return {
     connected: true,
-    driver: DB_DRIVER,
-    name: DB_NAME,
+    driver,
   };
 }
 
-module.exports = {
-  connect,
-};
+module.exports = { connect };
